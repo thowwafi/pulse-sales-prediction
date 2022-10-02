@@ -354,7 +354,7 @@ if __name__ == "__main__":
     # run_eda(df)
     df = convert_df_to_log(df)
 
-    # handle duplicate data
+    df = handle_duplicate_data(df)
     
 
     X = df[['log_PDRB_Per_Kapita', 'log_Indeks_Pembangunan_Manusia', 'log_PDRB', 'log_Jumlah_Penduduk', 'log_Dana_Alokasi_Umum', 'log_Pengeluaran_Riil_per_Kapita_ per_Tahun', 'log_Nilai_UMR', 'log_Jumlah_Penduduk_Miskin', 'log_Jumlah_Penduduk_Bekerja', 'log_Pengguna_Internet', 'log_Pemilik_Ponsel', 'log_Pengguna_Ponsel', 'Area_encode', 'Regional_Encode']]
