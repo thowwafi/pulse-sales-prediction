@@ -480,9 +480,10 @@ if __name__ == "__main__":
 
     y_pred2 = dtr.predict(X_test_sfs2)
 
+    print('y_pred2', y_pred2)
+
     # Compute the accuracy of the prediction
     score = dtr.score(X_test_sfs2, y_test)
     print("R-squared:", score) 
-
 
     print('done')
